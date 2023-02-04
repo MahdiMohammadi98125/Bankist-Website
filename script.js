@@ -156,7 +156,7 @@ const sectionObserver = new IntersectionObserver(revealSection, {
 });
 allSections.forEach(function (section) {
   sectionObserver.observe(section);
-  // section.classList.add('section--hidden');
+  section.classList.add('section--hidden');
 });
 
 // ! lazy loading image
@@ -188,7 +188,7 @@ const slider = function () {
 
   let curSlide = 0;
   const maxSlide = slides.length;
-  
+
   const createDots = function () {
     slides.forEach(function (_, i) {
       dotContainer.insertAdjacentHTML(
